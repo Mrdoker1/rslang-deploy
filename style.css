@@ -1,0 +1,1990 @@
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/global.scss ***!
+  \******************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap);
+/*!**********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/global.scss (1) ***!
+  \**********************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+html {
+  height: 100%;
+  scroll-behavior: smooth; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  pointer-events: none; }
+
+::placeholder {
+  font: normal 300 14px/19px "Montserrat"; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+button:hover {
+  background-color: #C3DCE3;
+  color: #2B788B; }
+
+.bttn {
+  padding: 14px 22px;
+  border-radius: 50px;
+  border: none;
+  background-color: #2B788B;
+  letter-spacing: -0.04em;
+  color: white;
+  text-decoration: none;
+  transition: 0.1s linear;
+  font: normal 700 16px/100% "Montserrat";
+  cursor: pointer; }
+  .bttn:hover {
+    background-color: transparent;
+    color: #2B788B;
+    outline: 3px solid #2B788B; }
+
+.bttn--light {
+  background-color: #C3DCE3;
+  color: #2B788B; }
+  .bttn--light:hover {
+    color: white;
+    background-color: #2B788B;
+    outline: none; }
+
+.bttn--transparent {
+  padding: 0;
+  background: none;
+  color: #000; }
+  .bttn--transparent:hover {
+    text-decoration: underline;
+    color: #2B788B;
+    outline: transparent; }
+
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font: normal 300 14px/19px "Montserrat";
+  background-color: #F6F5F4;
+  letter-spacing: -0.04em; }
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main {
+  flex: 1 1 auto;
+  background-color: #F6F5F4; }
+
+.nav__list {
+  display: flex; }
+
+.nav__item {
+  padding: 0 1rem; }
+  .nav__item a {
+    padding-bottom: 2px;
+    border-bottom: 1.22px solid transparent;
+    color: #757575;
+    font: normal 600 16px/140% "Montserrat";
+    letter-spacing: -0.04em;
+    text-decoration: none;
+    transition: 0.1s linear; }
+    .nav__item a.active {
+      color: #000; }
+  .nav__item:first-child {
+    padding-left: 0; }
+  .nav__item:hover a {
+    color: #000; }
+
+.page {
+  margin: 3rem 0; }
+  .page__title {
+    margin-bottom: 2rem;
+    font: normal 400 48px/100% "Dela Gothic One"; }
+
+.section-img {
+  display: flex;
+  align-items: center; }
+  .section-img img {
+    display: flex;
+    max-width: 580px;
+    width: 100%; }
+
+.section-right {
+  max-width: 474px;
+  width: 100%;
+  flex: 1;
+  align-self: center; }
+
+.section__title {
+  margin-bottom: 30px;
+  font: normal 400 48px/100% "Dela Gothic One";
+  letter-spacing: -0.04em; }
+
+.section__description {
+  margin-bottom: 30px;
+  font: normal 600 18px/140% "Montserrat";
+  letter-spacing: -0.04em;
+  color: #757575; }
+
+.games .games__list {
+  display: flex;
+  gap: 30px; }
+  .games .games__list .game:last-child .game__img {
+    animation-delay: 0.5s; }
+
+.games .game {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 14px;
+  position: relative;
+  text-align: center; }
+  .games .game--sprint {
+    width: 120px; }
+    .games .game--sprint:hover:before {
+      background-color: #945069; }
+    .games .game--sprint:hover .game__bttn {
+      color: white; }
+    .games .game--sprint:before {
+      transition: 0.1s linear;
+      content: '';
+      display: block;
+      width: calc(100% - 5px);
+      position: absolute;
+      bottom: 0px;
+      left: 5px;
+      height: 80%;
+      border-radius: 14px;
+      background-color: #F2D4DC; }
+    .games .game--sprint .game__bttn {
+      transition: 0.1s linear;
+      color: #945069;
+      z-index: 0; }
+  .games .game--audio-call {
+    width: 172px; }
+    .games .game--audio-call:hover:before {
+      background-color: #2B788B; }
+    .games .game--audio-call:hover .game__bttn {
+      color: white; }
+    .games .game--audio-call:before {
+      transition: 0.1s linear;
+      content: '';
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      height: 80%;
+      border-radius: 14px;
+      background-color: #C3DCE3; }
+    .games .game--audio-call .game__bttn {
+      transition: 0.1s linear;
+      color: #2B788B;
+      z-index: 0; }
+  .games .game__img {
+    height: 106px;
+    object-fit: contain;
+    position: relative;
+    top: -5px;
+    transform: translatey(0px);
+    animation: float 4.5s ease-in-out infinite; }
+
+.app-statistic {
+  display: flex; }
+  .app-statistic div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; }
+    .app-statistic div .text {
+      text-align: center; }
+  .app-statistic .words {
+    padding-right: 3rem;
+    border-right: 1.22px solid #E0E0E0; }
+    .app-statistic .words .numbers {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font: normal 400 40px/100% "Dela Gothic One";
+      color: #000;
+      letter-spacing: -0.02em; }
+      .app-statistic .words .numbers:before {
+        content: url("./assets/img/icon-lightning.svg");
+        display: flex;
+        width: 24px;
+        height: 30px;
+        margin-right: 10px; }
+      .app-statistic .words .numbers:after {
+        content: '+';
+        display: inline-block;
+        color: #2B788B; }
+  .app-statistic .games {
+    padding-left: 3rem; }
+    .app-statistic .games .numbers {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font: normal 400 40px/100% "Dela Gothic One";
+      color: #000;
+      letter-spacing: -0.02em; }
+      .app-statistic .games .numbers:before {
+        content: url("./assets/img/icon-mini-game.svg");
+        display: flex;
+        width: 24px;
+        height: 30px;
+        margin-right: 10px; }
+      .app-statistic .games .numbers:after {
+        content: '+';
+        display: inline-block;
+        color: #2B788B; }
+  .app-statistic span {
+    font: normal 600 16px/140% "Montserrat";
+    color: #757575; }
+
+.divider-vertical {
+  border-left: 1px solid #E0E0E0;
+  height: 46px; }
+
+.divider-horizontal {
+  border-top: 1px solid #E0E0E0;
+  width: 100%; }
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #C3DCE3;
+  font: normal 600 12px/140% "Montserrat";
+  color: #2B788B; }
+
+.social {
+  display: flex;
+  gap: 30px; }
+
+.icon {
+  display: block;
+  width: 30px;
+  height: 24px;
+  transition: 0.1s linear; }
+  .icon--git {
+    background: url("./assets/img/icon-git.svg") no-repeat center; }
+  .icon--rs {
+    background: url("./assets/img/icon-rs.svg") no-repeat center; }
+  .icon--yt {
+    background: url("./assets/img/icon-yt.svg") no-repeat center; }
+  .icon:hover {
+    filter: brightness(0); }
+
+.rs-logo {
+  width: 90px;
+  height: 26px;
+  background: url("./assets/img/logo.svg") no-repeat center; }
+
+.rs-icon {
+  width: 60px;
+  height: 30px;
+  background: url("./assets/img/icon-rs-school.svg") no-repeat center; }
+
+.play-icon {
+  width: 24px;
+  height: 24px;
+  background: url("./assets/img/icon-play.svg") no-repeat center; }
+
+.statistics-image {
+  width: 200px;
+  height: 200px;
+  background: url("./assets/img/image-statistics.svg") no-repeat center; }
+
+.sprint-image {
+  width: 250px;
+  height: 400px;
+  background: url("./assets/img/image-sprint.svg") no-repeat center;
+  background-size: contain; }
+
+.audiocall-image {
+  width: 250px;
+  height: 400px;
+  background: url("./assets/img/image-audio-call.svg") no-repeat center;
+  background-size: contain; }
+
+@keyframes float {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(-10px); }
+  100% {
+    transform: translatey(0px); } }
+
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/header.scss ***!
+  \***********************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.header {
+  padding: 2.2rem 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #F6F5F4; }
+  .header .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .header__logo {
+    text-decoration: none; }
+  .header__menu {
+    margin-left: 30px;
+    padding-left: 30px;
+    border-left: 1.22px solid #E0E0E0; }
+  .header .dropdown {
+    position: relative;
+    cursor: pointer; }
+    .header .dropdown span {
+      color: #757575;
+      font: normal 600 16px/140% "Montserrat";
+      letter-spacing: -0.04em; }
+      .header .dropdown span:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z'/%3E%3C/svg%3E");
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        padding: 0 5px; }
+    .header .dropdown__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 215px;
+      padding: 20px;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s ease-in-out;
+      background-color: #fff;
+      border-radius: 14px;
+      box-shadow: 0px 343.472px 343.472px rgba(52, 41, 39, 0.08), 0px 183.185px 183.185px rgba(52, 41, 39, 0.12), 0px 91.5925px 91.5925px rgba(52, 41, 39, 0.04), 0px 68.6944px 68.6944px rgba(52, 41, 39, 0.04), 0px 11.4491px 68.6944px rgba(52, 41, 39, 0.04), 0px 11.4491px 11.4491px rgba(52, 41, 39, 0.04); }
+      .header .dropdown__menu-item a {
+        color: #757575;
+        font: normal 600 16px/140% "Montserrat";
+        letter-spacing: -0.04em;
+        transition: 0.1s linear; }
+        .header .dropdown__menu-item a:hover {
+          color: #000; }
+    .header .dropdown:hover .dropdown__menu {
+      opacity: 1;
+      visibility: visible; }
+  .header__user-links {
+    display: flex;
+    gap: 30px;
+    align-items: center; }
+  .header .user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font: normal 600 16px/140% "Montserrat"; }
+    .header .user__avatar {
+      display: flex;
+      justify-content: center;
+      padding: 11px 18px;
+      max-width: 44px;
+      max-height: 44px;
+      letter-spacing: -0.04em;
+      text-align: center;
+      color: #2B788B;
+      border-radius: 50px;
+      background-color: #C3DCE3;
+      text-transform: uppercase; }
+    .header .user__name {
+      color: #757575;
+      letter-spacing: -0.04em;
+      text-transform: capitalize; }
+
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/sectionSplash.scss ***!
+  \******************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.splash {
+  padding: 3.5rem 0 9rem; }
+  .splash__wrapper {
+    max-width: 475px;
+    width: 100%; }
+  .splash__subtitle {
+    margin-bottom: 24px;
+    font: normal 600 16px/140% "Montserrat";
+    color: #2B788B;
+    text-transform: uppercase;
+    letter-spacing: 0.14em; }
+  .splash__title {
+    margin-bottom: 30px;
+    font: normal 400 56px/100% "Dela Gothic One";
+    letter-spacing: -0.04em; }
+  .splash__description {
+    margin-bottom: 32px;
+    font: normal 600 18px/140% "Montserrat";
+    color: #757575; }
+  .splash__buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px; }
+  .splash.parallax {
+    position: relative;
+    background: url("/assets/img/splash-bg-3.png") no-repeat center right, url("/assets/img/splash-bg-1.png") no-repeat 75%, url("/assets/img/splash-bg-2.png") no-repeat 55%; }
+
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/sectionDevelopers.scss ***!
+  \**********************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.developers__list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; }
+
+.developers .developer {
+  display: flex;
+  flex-direction: column; }
+  .developers .developer__img {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    border-radius: 50%; }
+  .developers .developer__title {
+    margin-bottom: 2rem;
+    font: normal 400 26px/100% "Dela Gothic One";
+    text-align: center; }
+  .developers .developer__role-list {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem; }
+  .developers .developer__role-item {
+    padding: 3px 15px;
+    background-color: white;
+    border-radius: 25px; }
+
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/sectionBenefits.scss ***!
+  \********************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.benefits {
+  background: white; }
+  .benefits .benefits__item .container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; }
+  .benefits .benefits__item {
+    padding: 5rem 0 5rem; }
+    .benefits .benefits__item:first-child .container {
+      justify-content: space-between; }
+    .benefits .benefits__item:nth-child(even) {
+      padding: 0;
+      background-color: #F6F5F4; }
+      .benefits .benefits__item:nth-child(even) .container {
+        padding: 1rem 0 0 4.5rem;
+        flex-direction: row-reverse; }
+
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/sectionGames.scss ***!
+  \*****************************************************************************************************************************************************************************************/
+.games__list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; }
+
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/footer.scss ***!
+  \***********************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.footer {
+  padding: 2.5rem 0 2.5rem;
+  background-color: #F6F5F4; }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; }
+  .footer__menu .nav__item:last-child {
+    padding-right: 0; }
+  .footer .nav__item a {
+    font: normal 600 14px/140% "Montserrat"; }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 20px;
+    border-top: 1.22px solid #E0E0E0; }
+  .footer__copyright {
+    font: normal 600 12px/140% "Montserrat";
+    color: #757575; }
+    .footer__copyright a {
+      color: #757575; }
+      .footer__copyright a:hover {
+        color: #000; }
+
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/login.scss ***!
+  \**********************************************************************************************************************************************************************************/
+.cd-signin-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 54, 66, 0.9);
+  z-index: 3;
+  overflow-y: auto;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+  display: flex; }
+  .cd-signin-modal a {
+    text-decoration: none; }
+  .cd-signin-modal__container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background: #FFF;
+    margin: 3em auto 4em;
+    font-size: 1.2em;
+    cursor: auto;
+    border-radius: 14px;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+  .cd-signin-modal__input {
+    font-size: 1em;
+    box-sizing: border-box; }
+  .cd-signin-modal--is-visible {
+    visibility: visible;
+    opacity: 1; }
+
+.cd-signin-modal--is-visible .cd-signin-modal__container {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+
+.cd-signin-modal__switcher:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both; }
+
+.cd-signin-modal__switcher li {
+  width: 50%;
+  float: left;
+  text-align: center; }
+
+.cd-signin-modal__switcher li:first-child a {
+  border-radius: .25em 0 0 0; }
+
+.cd-signin-modal__switcher li:last-child a {
+  border-radius: 0 .25em 0 0; }
+
+.cd-signin-modal__switcher a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #d2d8d8;
+  color: #809191; }
+
+.cd-signin-modal__switcher a.cd-selected {
+  background: #FFF;
+  color: #505260; }
+
+@media only screen and (min-width: 600px) {
+  .cd-signin-modal__container {
+    margin: auto; }
+  .cd-signin-modal__switcher a {
+    height: 70px;
+    line-height: 70px; } }
+
+.cd-signin-modal__form {
+  padding: 1.4em; }
+
+.cd-signin-modal__fieldset {
+  position: relative;
+  margin: 1.4em 0; }
+
+.cd-signin-modal__fieldset:first-child {
+  margin-top: 0; }
+
+.cd-signin-modal__fieldset:last-child {
+  margin-bottom: 0; }
+
+.cd-signin-modal__label {
+  font-size: 1.4em; }
+
+.cd-signin-modal__input[type="submit"]:disabled {
+  background-color: #777;
+  pointer-events: none; }
+
+.cd-signin-modal__input[type="submit"]:disabled:hover {
+  background-color: #777; }
+
+.cd-signin-modal__label.cd-signin-modal__label--image-replace {
+  /* replace text with an icon */
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 0; }
+
+.cd-signin-modal__label.cd-signin-modal__label--username {
+  background-image: url("../../../assets/img/cd-icon-username.svg"); }
+
+.cd-signin-modal__label.cd-signin-modal__label--email {
+  background-image: url("../../../assets/img/cd-icon-email.svg"); }
+
+.cd-signin-modal__label.cd-signin-modal__label--password {
+  background-image: url("../../../assets/img/cd-icon-password.svg"); }
+
+.cd-signin-modal__input {
+  border-radius: 6px; }
+
+.cd-signin-modal__input--full-width {
+  width: 100%; }
+
+.cd-signin-modal__input.cd-signin-modal__input--full-width {
+  width: 100%; }
+
+.cd-signin-modal__input.cd-signin-modal__input--has-padding {
+  padding: 12px 20px 12px 50px; }
+
+.cd-signin-modal__input.cd-signin-modal__input--has-border {
+  border: 1px solid #d2d8d8;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.cd-signin-modal__input.cd-signin-modal__input--has-border:focus {
+  border-color: #343642;
+  -webkit-box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+  box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+  outline: none; }
+
+.cd-signin-modal__input.cd-signin-modal__input--has-error {
+  border: 1px solid #d76666; }
+
+.cd-signin-modal__input[type=submit] {
+  padding: 16px 0;
+  cursor: pointer;
+  background: #2f889a;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.cd-signin-modal__input[type=submit]:hover, .cd-signin-modal__input[type=submit]:focus {
+  background: #3599ae;
+  outline: none; }
+
+.cd-signin-modal__hide-password {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 6px 15px;
+  border-left: 1px solid #d2d8d8;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #343642; }
+
+.cd-signin-modal__error {
+  display: inline-block;
+  position: absolute;
+  left: -5px;
+  bottom: -35px;
+  background: rgba(215, 102, 102, 0.9);
+  padding: .8em;
+  z-index: 2;
+  color: #FFF;
+  font-size: 1.3rem;
+  border-radius: 0.25em;
+  /* prevent click and touch events */
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s; }
+
+.cd-signin-modal__error::after {
+  /* triangle */
+  content: '';
+  position: absolute;
+  left: 22px;
+  bottom: 100%;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(215, 102, 102, 0.9); }
+
+.cd-signin-modal__error.cd-signin-modal__error--is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0s; }
+
+@media only screen and (min-width: 600px) {
+  .cd-signin-modal__form {
+    padding: 2em; }
+  .cd-signin-modal__fieldset {
+    margin: 2em 0; }
+  .cd-signin-modal__fieldset:first-child {
+    margin-top: 0; }
+  .cd-signin-modal__fieldset:last-child {
+    margin-bottom: 0; }
+  .cd-signin-modal__input.cd-signin-modal__input--has-padding {
+    padding: 16px 20px 16px 50px; }
+  .cd-signin-modal__input[type=submit] {
+    padding: 16px 0; } }
+
+.cd-signin-modal__message {
+  padding: 1.4em 1.4em 0;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-align: center; }
+
+@media only screen and (min-width: 600px) {
+  .cd-signin-modal__message {
+    padding: 2em 2em 0; } }
+
+.cd-signin-modal__bottom-message {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -30px;
+  text-align: center;
+  font-size: 1.4rem; }
+
+.cd-signin-modal__bottom-message a {
+  color: #FFF;
+  text-decoration: underline; }
+
+.cd-signin-modal__close {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: -40px;
+  background: url("../../../assets/img/cd-icon-close.svg") no-repeat center center;
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+@media only screen and (min-width: 1170px) {
+  .cd-signin-modal__close {
+    display: none; } }
+
+.cd-signin-modal__block {
+  display: none; }
+
+.cd-signin-modal__block.cd-signin-modal__block--is-selected {
+  display: block; }
+
+.cd-signin-modal__message {
+  text-align: center;
+  padding: 0;
+  font-size: 1em; }
+
+#signup-password,
+#signin-password {
+  padding-right: 100px; }
+
+.hidden {
+  display: none !important; }
+
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/pageBook.scss ***!
+  \*************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.page__book {
+  display: flex;
+  flex-direction: column; }
+
+.words__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 1 1 0;
+  order: 2;
+  position: relative;
+  align-items: flex-start;
+  align-content: flex-start; }
+
+.word-levels {
+  display: flex;
+  order: 1; }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  border-radius: 14px;
+  box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+  background-color: #fff; }
+  .card-right {
+    padding: 40px; }
+  .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px 0 0 14px; }
+  .card.hard {
+    border: 2px solid red; }
+  .card.easy {
+    border: 2px solid blue; }
+
+.pagination {
+  display: flex;
+  gap: 1rem;
+  order: 3; }
+  .pagination__item {
+    color: black;
+    border: 1px solid;
+    text-decoration: none; }
+    .pagination__item.active {
+      color: red; }
+    .pagination__item.learned {
+      color: blue; }
+
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/games.scss ***!
+  \**********************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.game {
+  display: flex;
+  height: 100%; }
+  .game__wrapper {
+    margin: auto;
+    padding: 10px 0;
+    max-width: 800px;
+    width: 100%; }
+  .game__window {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 14px;
+    padding: 20px 40px;
+    gap: 10px; }
+    .game__window .sprint-image {
+      width: 100%; }
+    .game__window .audiocall-image {
+      width: 100%; }
+    .game__window__light {
+      background: #ffffff;
+      box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
+  .game__block {
+    position: relative; }
+  .game__heading {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+    .game__heading-title {
+      font: normal 400 48px/100% "Dela Gothic One";
+      color: #000; }
+    .game__heading-skill {
+      width: max-content;
+      font: normal 600 12px/140% "Montserrat";
+      background-color: #C3DCE3;
+      color: #2B788B;
+      padding: 4px 8px;
+      border-radius: 6px; }
+  .game__desc {
+    padding-top: 20px;
+    font: normal 600 16px/140% "Montserrat";
+    color: #757575; }
+  .game__text {
+    padding-top: 30px;
+    font: normal 600 14px/140% "Montserrat";
+    color: #757575; }
+  .game__start {
+    margin-top: 30px; }
+
+.levels {
+  display: flex;
+  flex-direction: row;
+  padding-top: 8px;
+  gap: 24px; }
+  .levels__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    border: 3px solid black;
+    font: normal 600 16px/140% "Montserrat"; }
+  .levels [type="radio"] {
+    display: none; }
+
+#level-1 + label {
+  color: #639B6D;
+  border-color: #639B6D; }
+  #level-1 + label:hover {
+    background-color: rgba(99, 155, 109, 0.1); }
+
+#level-1:checked + label {
+  color: white;
+  border-color: #639B6D;
+  background-color: #639B6D; }
+
+#level-2 + label {
+  color: #C4A24C;
+  border-color: #C4A24C; }
+  #level-2 + label:hover {
+    background-color: rgba(196, 162, 76, 0.1); }
+
+#level-2:checked + label {
+  color: white;
+  border-color: #C4A24C;
+  background-color: #C4A24C; }
+
+#level-3 + label {
+  color: #CB5B43;
+  border-color: #CB5B43; }
+  #level-3 + label:hover {
+    background-color: rgba(203, 91, 67, 0.1); }
+
+#level-3:checked + label {
+  color: white;
+  border-color: #CB5B43;
+  background-color: #CB5B43; }
+
+#level-4 + label {
+  color: #A95170;
+  border-color: #A95170; }
+  #level-4 + label:hover {
+    background-color: rgba(169, 81, 112, 0.1); }
+
+#level-4:checked + label {
+  color: white;
+  border-color: #A95170;
+  background-color: #A95170; }
+
+#level-5 + label {
+  color: #A15993;
+  border-color: #A15993; }
+  #level-5 + label:hover {
+    background-color: rgba(161, 89, 147, 0.1); }
+
+#level-5:checked + label {
+  color: white;
+  border-color: #A15993;
+  background-color: #A15993; }
+
+#level-6 + label {
+  color: #5996A5;
+  border-color: #5996A5; }
+  #level-6 + label:hover {
+    background-color: rgba(89, 150, 165, 0.1); }
+
+#level-6:checked + label {
+  color: white;
+  border-color: #5996A5;
+  background-color: #5996A5; }
+
+.audio {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; }
+  .audio__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .audio__question {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+    width: 140px;
+    height: 140px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 5px solid #2B788B;
+    color: #2B788B;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.1s linear; }
+    .audio__question:hover {
+      background-color: #2B788B; }
+      .audio__question:hover img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(0%) hue-rotate(269deg) brightness(107%) contrast(107%); }
+      .audio__question:hover span {
+        color: #ffffff; }
+  .audio__img {
+    transition: 0.1s linear; }
+  .audio__text-play {
+    transition: 0.1s linear; }
+  .audio__attempts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px; }
+  .audio__icon-heart {
+    font: normal 400 32px/100% "Dela Gothic One";
+    color: #945069;
+    transition: 0.1s linear; }
+    .audio__icon-heart_miss {
+      color: #F2D4DC; }
+  .audio__choices {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%; }
+  .audio__choice {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 100px;
+    border: 3px solid #BABABA;
+    color: #BABABA;
+    background-color: transparent;
+    font: normal 600 16px/140% "Montserrat";
+    transition: 0.1s linear; }
+    .audio__choice:hover {
+      background-color: transparent;
+      border-color: #757575;
+      color: #757575; }
+    .audio__choice.disabled {
+      pointer-events: none; }
+      .audio__choice.disabled[data-answer] {
+        border-color: #A95170;
+        background-color: #A95170;
+        color: white; }
+    .audio__choice.active {
+      border-color: #2B788B;
+      color: #2B788B; }
+      .audio__choice.active[data-answer] {
+        border-color: #639B6D;
+        background-color: #639B6D;
+        color: white; }
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .answer__photo {
+    height: 200px;
+    border-radius: 14px; }
+  .answer__word {
+    transition: 0.1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+    padding: 10px 20px; }
+  .answer__play {
+    padding: 0;
+    background-color: #F6F5F4;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: 0.1s linear; }
+    .answer__play:hover {
+      background-color: #2B788B; }
+      .answer__play:hover img {
+        -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(0%) hue-rotate(269deg) brightness(107%) contrast(107%);
+        filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(0%) hue-rotate(269deg) brightness(107%) contrast(107%); }
+  .answer__icon-music {
+    width: 24px;
+    height: 24px;
+    transition: 0.1s linear; }
+  .answer__text {
+    font: normal 600 18px/140% "Montserrat";
+    color: #757575; }
+    .answer__text b {
+      color: #000; }
+
+.game-container {
+  gap: 10px;
+  max-width: 1400px;
+  padding: 0; }
+  @media (max-width: 1320px) {
+    .game-container {
+      width: 500px;
+      flex-direction: column; } }
+
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/sprint.scss ***!
+  \***********************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.sprint-game-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.sprint-game {
+  position: relative; }
+  .sprint-game__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px; }
+    .sprint-game__body-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px; }
+    .sprint-game__body-strike {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      gap: 10px;
+      font: normal 400 26px/100% "Dela Gothic One"; }
+    .sprint-game__body-words {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px; }
+    .sprint-game__body-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px; }
+  .sprint-game__multiplier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; }
+    .sprint-game__multiplier span:nth-child(1) {
+      font: normal 400 40px/100% "Dela Gothic One"; }
+    .sprint-game__multiplier span:nth-child(2) {
+      font: normal 600 14px/140% "Montserrat";
+      color: #757575;
+      letter-spacing: 1px; }
+  .sprint-game__points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; }
+    .sprint-game__points span:nth-child(1) {
+      font: normal 400 40px/100% "Dela Gothic One"; }
+    .sprint-game__points span:nth-child(2) {
+      font: normal 600 14px/140% "Montserrat";
+      color: #757575;
+      letter-spacing: 1px; }
+  .sprint-game__word {
+    font: normal 400 48px/100% "Dela Gothic One"; }
+  .sprint-game__translatedWord {
+    font: normal 400 26px/100% "Dela Gothic One";
+    color: #2B788B; }
+  .sprint-game__normal-strike {
+    color: #2B788B; }
+  .sprint-game__empty-strike {
+    color: #C3DCE3; }
+  .sprint-game__true-button {
+    background-color: #639B6D;
+    color: white; }
+    .sprint-game__true-button:hover {
+      color: #639B6D;
+      background-color: transparent;
+      outline: 3px solid #639B6D; }
+  .sprint-game__false-button {
+    background-color: #A95170;
+    color: white; }
+    .sprint-game__false-button:hover {
+      color: #A95170;
+      background-color: transparent;
+      outline: 3px solid #A95170; }
+
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/chart.scss ***!
+  \**********************************************************************************************************************************************************************************/
+.chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.chart-wrapper {
+  position: absolute;
+  fill: none;
+  width: 100%;
+  height: 100%; }
+  .chart-wrapper svg {
+    width: 100%;
+    height: 100%; }
+  .chart-wrapper .chart-percentage {
+    transform: rotate(-90deg);
+    stroke-linecap: round; }
+
+.gameresult-chart {
+  position: relative;
+  width: 120px;
+  height: 120px; }
+  .gameresult-chart__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; }
+    .gameresult-chart__body-value {
+      padding-bottom: 4px; }
+
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/gameResult.scss ***!
+  \***************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.gameresult {
+  display: flex;
+  padding: 60px 25px;
+  background: white;
+  flex-direction: column;
+  width: 670px;
+  box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+  border-radius: 14px;
+  align-items: center; }
+  .gameresult__wrapper {
+    display: flex;
+    gap: 10px; }
+  .gameresult__info {
+    display: flex;
+    flex-direction: row; }
+    .gameresult__info-body {
+      display: flex;
+      flex-direction: column; }
+  .gameresult__header {
+    font: normal 400 32px/100% "Dela Gothic One";
+    color: #000; }
+  .gameresult__message {
+    padding-top: 12px;
+    font: normal 600 16px/140% "Montserrat";
+    color: #757575; }
+  .gameresult__charts {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 20px; }
+  .gameresult__actions {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 20px; }
+  .gameresult__button-replay:hover {
+    background-color: transparent; }
+    .gameresult__button-replay:hover::after {
+      filter: brightness(0) saturate(100%) invert(45%) sepia(15%) saturate(1788%) hue-rotate(145deg) brightness(86%) contrast(86%); }
+  .gameresult__button-replay::after {
+    content: '';
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    background: url("../../../assets/img/icon-replay.svg") no-repeat left center;
+    margin: 0px 5px;
+    vertical-align: bottom;
+    transition: 0.1s linear; }
+  .gameresult-chart__body {
+    text-align: center; }
+    .gameresult-chart__body-upper {
+      font: normal 600 14px/140% "Montserrat";
+      color: #000; }
+    .gameresult-chart__body-value {
+      font: normal 400 32px/100% "Dela Gothic One";
+      color: #000; }
+    .gameresult-chart__body-buttom {
+      font: normal 600 16px/140% "Montserrat";
+      color: #757575; }
+  .gameresult-chart__heart {
+    color: #945069; }
+
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/gameResultWords.scss ***!
+  \********************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.gameresultwords {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 40px 40px;
+  gap: 20px;
+  width: 630px;
+  height: 400px;
+  box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+  border-radius: 14px; }
+  .gameresultwords__list {
+    display: flex;
+    height: 200px;
+    overflow: hidden auto;
+    gap: 14px;
+    flex-direction: column;
+    margin-top: 32px;
+    height: 100%; }
+
+.knowingwords__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.knowingwords__header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px; }
+  .knowingwords__header-title {
+    font: normal 400 32px/100% "Dela Gothic One";
+    color: #000; }
+  .knowingwords__header-label {
+    font: normal 600 12px/140% "Montserrat";
+    color: #2B788B;
+    background: #C3DCE3;
+    padding: 4px 8px;
+    border-radius: 6px; }
+
+.unknowingwords__container {
+  display: flex;
+  flex-direction: column; }
+
+.unknowingwords__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; }
+  .unknowingwords__header-title {
+    font: normal 400 32px/100% "Dela Gothic One";
+    color: #000; }
+  .unknowingwords__header-label {
+    font: normal 600 12px/140% "Montserrat";
+    color: #945069;
+    background: #F2D4DC;
+    padding: 4px 8px;
+    border-radius: 6px; }
+
+.gameresultword {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; }
+  .gameresultword__icon {
+    background-color: #F6F5F4;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s linear; }
+    .gameresultword__icon svg {
+      filter: invert(89%) sepia(7%) saturate(31%) hue-rotate(339deg) brightness(86%) contrast(83%); }
+    .gameresultword__icon:hover {
+      background: #2B788B; }
+      .gameresultword__icon:hover .play-icon {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(0%) hue-rotate(269deg) brightness(107%) contrast(107%); }
+  .gameresultword__body {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font: normal 600 16px/140% "Montserrat";
+    color: #757575; }
+    .gameresultword__body-word {
+      color: #000; }
+
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/statistics.scss ***!
+  \***************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.statistics {
+  padding: 40px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
+  .statistics-denied {
+    display: flex;
+    max-width: fit-content;
+    flex-direction: row;
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    gap: 30px;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
+    .statistics-denied__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .statistics-denied__heading {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 490px; }
+      .statistics-denied__heading-header {
+        font: normal 400 32px/100% "Dela Gothic One"; }
+      .statistics-denied__heading-subtitle {
+        font: normal 600 16px/140% "Montserrat";
+        color: #757575; }
+    .statistics-denied__buttons {
+      display: flex;
+      gap: 20px;
+      align-items: center; }
+  .statistics__tabs {
+    display: flex;
+    font: normal 400 26px/100% "Dela Gothic One";
+    height: 40px;
+    gap: 40px;
+    cursor: pointer; }
+    .statistics__tabs-tab {
+      transition: 0.1s linear;
+      color: #757575; }
+      .statistics__tabs-tab:hover {
+        color: #000; }
+      .statistics__tabs-tab.active {
+        color: #000;
+        border-bottom: 2px solid #000; }
+  .statistics__charts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
+  .statistics__container {
+    display: flex;
+    gap: 20px;
+    width: 100%; }
+  .statistics__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px; }
+  .statistics__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .statistics__body-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 12px; }
+    .statistics__body-info {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+  .statistics__header {
+    font: normal 400 32px/100% "Dela Gothic One"; }
+  .statistics__subtitle {
+    font: normal 600 16px/140% "Montserrat";
+    color: #757575; }
+  .statistics__wordLearnedTotal {
+    font: normal 400 40px/100% "Dela Gothic One"; }
+    .statistics__wordLearnedTotal-number {
+      display: flex;
+      justify-content: center; }
+      .statistics__wordLearnedTotal-number span {
+        color: #2B788B; }
+    .statistics__wordLearnedTotal-subtitle {
+      font: normal 600 16px/140% "Montserrat";
+      color: #757575; }
+  .statistics__rightAnswersTotal {
+    font: normal 400 40px/100% "Dela Gothic One"; }
+    .statistics__rightAnswersTotal-number {
+      display: flex;
+      justify-content: center; }
+      .statistics__rightAnswersTotal-number span {
+        color: #2B788B; }
+    .statistics__rightAnswersTotal-subtitle {
+      font: normal 600 16px/140% "Montserrat";
+      color: #757575; }
+  .statistics__sprint {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; }
+    .statistics__sprint .sprint-image {
+      max-width: 70px;
+      max-height: 112px; }
+    .statistics__sprint-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px; }
+    .statistics__sprint-heading {
+      display: flex;
+      gap: 8px; }
+    .statistics__sprint-header {
+      font: normal 400 26px/100% "Dela Gothic One"; }
+    .statistics__sprint-info {
+      display: flex;
+      flex-direction: column; }
+  .statistics__audiocall {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; }
+    .statistics__audiocall .audiocall-image {
+      max-width: 70px;
+      max-height: 112px; }
+    .statistics__audiocall-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px; }
+    .statistics__audiocall-heading {
+      display: flex;
+      gap: 8px; }
+    .statistics__audiocall-header {
+      font: normal 400 26px/100% "Dela Gothic One"; }
+    .statistics__audiocall-info {
+      display: flex;
+      flex-direction: column; }
+
+#Chart {
+  max-height: 400px; }
+
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/particles.scss ***!
+  \**************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.particle.sprint-multiplier {
+  display: flex;
+  justify-content: center;
+  padding: 11px 18px;
+  width: 44px;
+  height: 44px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  border-radius: 50px;
+  align-items: center;
+  background-color: transparent !important;
+  color: black !important;
+  font: normal 400 48px/100% "Dela Gothic One"; }
+
+.particle.sprint-points {
+  display: flex;
+  justify-content: center;
+  padding: 11px 18px;
+  width: 44px;
+  height: 44px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  border-radius: 50px;
+  align-items: center;
+  font: normal 700 16px/100% "Montserrat"; }
+
