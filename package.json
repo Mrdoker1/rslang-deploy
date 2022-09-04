@@ -1,0 +1,12 @@
+{
+    "name": "rslang",
+    "version": "0.1.0",
+    "description": "Project Description",
+    "scripts": {
+      "start": "serve"
+    },
+    "dependencies": {
+      "serve": "^10.0.1"
+    },
+    "author": "Mrdoker1"
+  }
