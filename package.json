@@ -3,8 +3,8 @@
     "version": "0.1.0",
     "description": "Project Description",
     "scripts": {
-        "start": "node server.js", // serves the application
-        "heroku-postbuild": "webpack -p" // runs after installation
+        "start": "node server.js",
+        "heroku-postbuild": "webpack -p"
     },
     "dependencies": {
         "express": "^4.18.1",
