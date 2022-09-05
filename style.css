@@ -35,7 +35,7 @@
   font-style: normal; }
 
 html {
-  height: 100%;
+  height: -webkit-fill-available;
   scroll-behavior: smooth; }
 
 * {
@@ -89,6 +89,24 @@ button:hover {
     background-color: #2B788B;
     outline: none; }
 
+.bttn--green {
+  width: 100%;
+  padding: 14px 10px;
+  border-radius: 100px;
+  background-color: #639B6D; }
+  .bttn--green:hover {
+    color: #639B6D;
+    background-color: rgba(99, 155, 109, 0.3); }
+
+.bttn--red {
+  width: 100%;
+  padding: 14px 10px;
+  border-radius: 100px;
+  background-color: #CB5B43; }
+  .bttn--red:hover {
+    color: #CB5B43;
+    background-color: rgba(203, 91, 67, 0.3); }
+
 .bttn--transparent {
   padding: 0;
   background: none;
@@ -100,7 +118,8 @@ button:hover {
 
 body {
   display: flex;
-  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   flex-direction: column;
   font: normal 300 14px/19px "Montserrat";
   background-color: #F6F5F4;
@@ -118,8 +137,17 @@ body {
   align-items: center; }
 
 .main {
+  display: flex;
+  flex-direction: row;
   flex: 1 1 auto;
+  min-height: 100%;
+  justify-content: space-between;
+  align-items: center;
   background-color: #F6F5F4; }
+
+.main-page {
+  flex-direction: column;
+  display: initial; }
 
 .nav__list {
   display: flex; }
@@ -140,6 +168,45 @@ body {
     padding-left: 0; }
   .nav__item:hover a {
     color: #000; }
+
+.dropdown {
+  position: relative;
+  cursor: pointer; }
+  .dropdown span {
+    color: #757575;
+    font: normal 600 16px/140% "Montserrat";
+    letter-spacing: -0.04em; }
+    .dropdown span:after {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z'/%3E%3C/svg%3E");
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      padding: 0 5px; }
+  .dropdown__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 215px;
+    padding: 20px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0px 343.472px 343.472px rgba(52, 41, 39, 0.08), 0px 183.185px 183.185px rgba(52, 41, 39, 0.12), 0px 91.5925px 91.5925px rgba(52, 41, 39, 0.04), 0px 68.6944px 68.6944px rgba(52, 41, 39, 0.04), 0px 11.4491px 68.6944px rgba(52, 41, 39, 0.04), 0px 11.4491px 11.4491px rgba(52, 41, 39, 0.04); }
+    .dropdown__menu-item a {
+      color: #757575;
+      font: normal 600 16px/140% "Montserrat";
+      letter-spacing: -0.04em;
+      transition: 0.1s linear; }
+      .dropdown__menu-item a:hover {
+        color: #000; }
+  .dropdown:hover .dropdown__menu {
+    opacity: 1;
+    visibility: visible; }
 
 .page {
   margin: 3rem 0; }
@@ -300,7 +367,26 @@ body {
   border-radius: 6px;
   background: #C3DCE3;
   font: normal 600 12px/140% "Montserrat";
-  color: #2B788B; }
+  color: #2B788B;
+  transition: 0.1s linear; }
+  .label--green {
+    background-color: rgba(99, 155, 109, 0.3);
+    color: #639B6D; }
+    .label--green.active {
+      background-color: #639B6D;
+      color: #fff; }
+  .label--yellow {
+    background-color: rgba(196, 162, 76, 0.3);
+    color: #C4A24C; }
+    .label--yellow.active {
+      background-color: #C4A24C;
+      color: #fff; }
+  .label--red {
+    background-color: rgba(203, 91, 67, 0.3);
+    color: #CB5B43; }
+    .label--red.active {
+      background-color: #CB5B43;
+      color: #fff; }
 
 .social {
   display: flex;
@@ -317,6 +403,22 @@ body {
     background: url("./assets/img/icon-rs.svg") no-repeat center; }
   .icon--yt {
     background: url("./assets/img/icon-yt.svg") no-repeat center; }
+  .icon--bookmark {
+    width: 16px;
+    height: 16px;
+    background: url("./assets/img/icon-bookmark.svg") no-repeat center; }
+  .icon--star {
+    width: 16px;
+    height: 16px;
+    background: url("./assets/img/icon-star.svg") no-repeat center; }
+  .icon--lightning {
+    width: 16px;
+    height: 16px;
+    background: url("./assets/img/icon-lightning.svg") no-repeat center; }
+  .icon--gear {
+    width: 24px;
+    height: 24px;
+    background: url("./assets/img/icon-gear.svg") no-repeat center; }
   .icon:hover {
     filter: brightness(0); }
 
@@ -335,6 +437,16 @@ body {
   height: 24px;
   background: url("./assets/img/icon-play.svg") no-repeat center; }
 
+.book-icon {
+  width: 32px;
+  height: 32px;
+  background: url("./assets/img/icon-book.svg") no-repeat center; }
+
+.hat-icon {
+  width: 32px;
+  height: 32px;
+  background: url("./assets/img/icon-hat.svg") no-repeat center; }
+
 .statistics-image {
   width: 200px;
   height: 200px;
@@ -350,6 +462,12 @@ body {
   width: 250px;
   height: 400px;
   background: url("./assets/img/image-audio-call.svg") no-repeat center;
+  background-size: contain; }
+
+.empty-book-image {
+  width: 200px;
+  height: 200px;
+  background: url("./assets/img/empty-img.png") no-repeat center;
   background-size: contain; }
 
 @keyframes float {
@@ -393,11 +511,12 @@ body {
   font-style: normal; }
 
 .header {
-  padding: 2.2rem 0 1.5rem;
+  padding: 24px 0;
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #F6F5F4; }
+  background-color: #F6F5F4;
+  box-shadow: inset 0px -1px 0px #e0e0e0; }
   .header .container {
     width: 100%;
     display: flex;
@@ -413,44 +532,6 @@ body {
     margin-left: 30px;
     padding-left: 30px;
     border-left: 1.22px solid #E0E0E0; }
-  .header .dropdown {
-    position: relative;
-    cursor: pointer; }
-    .header .dropdown span {
-      color: #757575;
-      font: normal 600 16px/140% "Montserrat";
-      letter-spacing: -0.04em; }
-      .header .dropdown span:after {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z'/%3E%3C/svg%3E");
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        padding: 0 5px; }
-    .header .dropdown__menu {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      min-width: 215px;
-      padding: 20px;
-      position: absolute;
-      top: 2rem;
-      left: 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.5s ease-in-out;
-      background-color: #fff;
-      border-radius: 14px;
-      box-shadow: 0px 343.472px 343.472px rgba(52, 41, 39, 0.08), 0px 183.185px 183.185px rgba(52, 41, 39, 0.12), 0px 91.5925px 91.5925px rgba(52, 41, 39, 0.04), 0px 68.6944px 68.6944px rgba(52, 41, 39, 0.04), 0px 11.4491px 68.6944px rgba(52, 41, 39, 0.04), 0px 11.4491px 11.4491px rgba(52, 41, 39, 0.04); }
-      .header .dropdown__menu-item a {
-        color: #757575;
-        font: normal 600 16px/140% "Montserrat";
-        letter-spacing: -0.04em;
-        transition: 0.1s linear; }
-        .header .dropdown__menu-item a:hover {
-          color: #000; }
-    .header .dropdown:hover .dropdown__menu {
-      opacity: 1;
-      visibility: visible; }
   .header__user-links {
     display: flex;
     gap: 30px;
@@ -716,6 +797,35 @@ body {
 /*!**********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/login.scss ***!
   \**********************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
 .cd-signin-modal {
   position: fixed;
   top: 0;
@@ -770,7 +880,8 @@ body {
 .cd-signin-modal__switcher li {
   width: 50%;
   float: left;
-  text-align: center; }
+  text-align: center;
+  font: normal 600 16px/140% "Montserrat"; }
 
 .cd-signin-modal__switcher li:first-child a {
   border-radius: .25em 0 0 0; }
@@ -814,11 +925,11 @@ body {
   font-size: 1.4em; }
 
 .cd-signin-modal__input[type="submit"]:disabled {
-  background-color: #777;
+  background-color: #757575;
   pointer-events: none; }
 
 .cd-signin-modal__input[type="submit"]:disabled:hover {
-  background-color: #777; }
+  background-color: #757575; }
 
 .cd-signin-modal__label.cd-signin-modal__label--image-replace {
   /* replace text with an icon */
@@ -1049,6 +1160,151 @@ body {
 .page__book {
   display: flex;
   flex-direction: column; }
+  .page__book .games__list {
+    gap: 10px; }
+  .page__book .games .game {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    border-radius: 14px;
+    overflow: hidden; }
+    .page__book .games .game--sprint {
+      width: auto;
+      background-color: #F2D4DC; }
+      .page__book .games .game--sprint:before {
+        content: initial; }
+    .page__book .games .game--audio-call {
+      min-width: 178px;
+      background-color: #C3DCE3; }
+      .page__book .games .game--audio-call .game__bttn {
+        padding-right: 0px; }
+      .page__book .games .game--audio-call:before {
+        content: initial; }
+    .page__book .games .game__img {
+      width: 44px;
+      height: 44px;
+      top: 0px;
+      left: -5px;
+      animation: mini-float 3.5s ease-in-out infinite; }
+    .page__book .games .game__bttn {
+      padding: 0 30px 0 10px; }
+  .page__book.learned .game {
+    filter: grayscale(1); }
+    .page__book.learned .game:hover .game__bttn {
+      color: #757575; }
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 14px; }
+  .page-header__right {
+    display: flex;
+    gap: 10px; }
+
+.page__settings {
+  transition: 0.1s linear;
+  order: 1;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #F6F5F4;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .page__settings span:after {
+    transition: 0.1s linear;
+    content: initial; }
+  .page__settings .dropdown__menu {
+    width: 100%;
+    max-width: 470px;
+    min-width: 470px;
+    left: auto;
+    top: 50px;
+    right: 0;
+    border: 1px solid #F6F5F4;
+    z-index: 1; }
+    .page__settings .dropdown__menu-item {
+      font: normal 600 16px/140% "Montserrat";
+      color: #757575; }
+  .page__settings .settings-value-checkbox {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .page__settings .settings-value-checkbox:checked + .settings-value-label:after {
+    opacity: 1; }
+  .page__settings .settings-value-label {
+    padding-left: 30px;
+    position: relative; }
+    .page__settings .settings-value-label:hover {
+      cursor: pointer; }
+    .page__settings .settings-value-label:before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0px;
+      top: -2px;
+      transition: opacity 0.2s linear;
+      border: 1px solid #757575;
+      border-radius: 4px;
+      background-color: #F6F5F4; }
+    .page__settings .settings-value-label:after {
+      content: url("./assets/img/icon-check.svg");
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0px;
+      top: -2px;
+      text-align: center;
+      line-height: 1.5;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+      border: 1px solid #2B788B;
+      border-radius: 4px;
+      background-color: #2B788B; }
+  .page__settings:hover {
+    background-color: #2B788B; }
+    .page__settings:hover .icon {
+      filter: brightness(0) invert(1); }
+
+.page .menu__item {
+  padding-left: 42px;
+  font: normal 400 26px/100% "Dela Gothic One";
+  color: #757575;
+  text-decoration: none;
+  background-position: left; }
+  .page .menu__item.active {
+    color: #000; }
+  .page .menu__item:nth-child(1) {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.22px solid #E0E0E0; }
+
+.word-levels {
+  display: flex;
+  order: 1; }
+  .word-levels__list {
+    max-width: 830px;
+    margin: 0 auto;
+    gap: 40px;
+    margin-bottom: 40px; }
+  .word-levels__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 14px;
+    font: normal 400 26px/100% "Dela Gothic One";
+    letter-spacing: -0.04em;
+    color: #000;
+    text-decoration: none; }
+    .word-levels__item.active {
+      border-bottom: 2px solid #000; }
 
 .words__list {
   display: flex;
@@ -1056,13 +1312,43 @@ body {
   gap: 40px;
   flex: 1 1 0;
   order: 2;
-  position: relative;
-  align-items: flex-start;
-  align-content: flex-start; }
+  margin-bottom: 40px;
+  padding: 0px 5rem;
+  position: relative; }
 
-.word-levels {
-  display: flex;
-  order: 1; }
+.words__list.grid {
+  gap: 20px; }
+  .words__list.grid .card {
+    flex-basis: calc(100% / 3 - 20px);
+    flex-direction: column;
+    border-radius: 14px; }
+    .words__list.grid .card-left {
+      border-radius: 14px 14px 0 0; }
+    .words__list.grid .card-right {
+      padding: 30px; }
+    .words__list.grid .card__image {
+      max-height: 250px;
+      min-height: 250px;
+      border-radius: 14px 14px 0 0; }
+    .words__list.grid .card__title {
+      word-break: break-word; }
+      .words__list.grid .card__title .word-title {
+        margin-bottom: 8px;
+        font: normal 400 26px/100% "Dela Gothic One"; }
+      .words__list.grid .card__title .word-translate {
+        font: normal 400 26px/100% "Dela Gothic One"; }
+    .words__list.grid .card-word__text-meaning {
+      font: normal 600 14px/140% "Montserrat"; }
+    .words__list.grid .card-word__text-example {
+      font: normal 600 14px/140% "Montserrat"; }
+    .words__list.grid .card__bottom {
+      display: inline; }
+      .words__list.grid .card__bottom .bttn {
+        width: auto;
+        padding: 8px 20px;
+        font: normal 600 14px/140% "Montserrat"; }
+        .words__list.grid .card__bottom .bttn:first-child {
+          margin-bottom: 10px; }
 
 .card {
   display: flex;
@@ -1071,30 +1357,193 @@ body {
   border-radius: 14px;
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
   background-color: #fff; }
+  .card:hover .stat__list {
+    right: 0%;
+    animation: slide-in 0.5s ease-in; }
+    .card:hover .stat__list .text {
+      opacity: 1;
+      visibility: visible; }
   .card-right {
-    padding: 40px; }
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    justify-content: flex-start; }
+  .card-left {
+    position: relative;
+    overflow: hidden; }
+    .card-left .stat__list {
+      position: absolute;
+      right: -35%;
+      top: 40px;
+      font: normal 600 16px/140% "Montserrat";
+      letter-spacing: -0.04em;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 8px 0px 0px 8px;
+      padding: 8px;
+      animation: slide-out 0.5s ease-in-out; }
+      .card-left .stat__list li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        row-gap: 11px; }
+        .card-left .stat__list li .text {
+          transition: 0.1s linear;
+          opacity: 0;
+          visibility: visible; }
+        .card-left .stat__list li:hover span {
+          filter: inherit; }
   .card__image {
+    max-width: 337px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 14px 0 0 14px; }
-  .card.hard {
-    border: 2px solid red; }
-  .card.easy {
-    border: 2px solid blue; }
+  .card__header {
+    display: flex;
+    justify-content: space-between; }
+  .card .play-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: #F6F5F4;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer; }
+    .card .play-icon:hover {
+      background-color: #2B788B; }
+  .card .word-title, .card .word-translate {
+    display: inline-block;
+    margin-bottom: 15px;
+    font: normal 400 32px/100% "Dela Gothic One";
+    letter-spacing: -0.04em; }
+  .card .word-translate {
+    color: #757575; }
+  .card-word__transcription {
+    margin-right: 10px;
+    font: normal 600 18px/140% "Montserrat";
+    letter-spacing: 0.04em; }
+  .card__sub-title {
+    margin-bottom: 20px; }
+  .card-word__status {
+    display: inline-block;
+    padding: 4px 12px;
+    font: normal 600 14px/140% "Montserrat";
+    color: #F6F5F4;
+    transition: 0.1s linear;
+    opacity: 0;
+    visibility: hidden; }
+  .card-word__text-meaning {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    font: normal 600 16px/140% "Montserrat";
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 150%;
+    border-bottom: 1.22px solid #E0E0E0; }
+  .card-word__text-example {
+    margin-bottom: 20px;
+    font: normal 600 16px/140% "Montserrat";
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 150%;
+    color: #757575; }
+  .card__bottom {
+    display: flex;
+    gap: 20px; }
+    .card__bottom .bttn {
+      outline: none; }
+  .card.hard .label {
+    background-color: #CB5B43;
+    opacity: 1;
+    visibility: visible; }
+  .card.hard .label {
+    color: #CB5B43;
+    background-color: rgba(203, 91, 67, 0.3); }
+  .card.hard .bttn--red {
+    color: #CB5B43;
+    background-color: rgba(203, 91, 67, 0.3); }
+  .card.easy .card-word__status {
+    background-color: #639B6D;
+    opacity: 1;
+    visibility: visible; }
+  .card.easy .bttn--green {
+    color: #639B6D;
+    background-color: rgba(99, 155, 109, 0.3); }
 
 .pagination {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 24px;
   order: 3; }
   .pagination__item {
-    color: black;
-    border: 1px solid;
-    text-decoration: none; }
+    transition: 0.1s linear;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font: normal 600 16px/140% "Montserrat";
+    color: #2B788B;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
+    .pagination__item:hover {
+      border: 3px solid #2B788B; }
     .pagination__item.active {
-      color: red; }
+      color: #F6F5F4;
+      background-color: #2B788B; }
     .pagination__item.learned {
-      color: blue; }
+      color: #F6F5F4;
+      border-color: #639B6D;
+      background-color: #639B6D; }
+
+.empty-message {
+  max-width: 800px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  margin: 4rem 0;
+  border-radius: 14px;
+  background: #fff; }
+
+.empty__title {
+  margin-bottom: 14px;
+  font: normal 400 32px/100% "Dela Gothic One";
+  color: #000;
+  letter-spacing: -0.04em; }
+
+.empty__description {
+  margin-bottom: 40px;
+  font: normal 600 16px/140% "Montserrat";
+  color: #757575; }
+
+.empty__bttn {
+  border-radius: 100px; }
+
+@keyframes mini-float {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(-3px); }
+  100% {
+    transform: translatey(0px); } }
+
+@keyframes slide-in {
+  from {
+    right: -35%; }
+  to {
+    right: 0%; } }
+
+@keyframes slide-out {
+  from {
+    right: 0%; }
+  to {
+    right: -35%; } }
 
 /*!**********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/games.scss ***!
@@ -1167,9 +1616,19 @@ body {
       padding: 4px 8px;
       border-radius: 6px; }
   .game__desc {
-    padding-top: 20px;
+    padding: 20px 0;
     font: normal 600 16px/140% "Montserrat";
     color: #757575; }
+  .game__control {
+    padding: 8px;
+    background-color: #F6F5F4;
+    color: #757575;
+    width: fit-content;
+    border-radius: 8px;
+    font: normal 600 12px/140% "Montserrat"; }
+    .game__control span {
+      font: normal 600 14px/140% "Montserrat";
+      color: #757575; }
   .game__text {
     padding-top: 30px;
     font: normal 600 14px/140% "Montserrat";
@@ -1181,7 +1640,7 @@ body {
   display: flex;
   flex-direction: row;
   padding-top: 8px;
-  gap: 24px; }
+  gap: 16px; }
   .levels__btn {
     display: flex;
     justify-content: center;
@@ -1304,7 +1763,7 @@ body {
     padding-top: 20px; }
   .audio__icon-heart {
     font: normal 400 32px/100% "Dela Gothic One";
-    color: #945069;
+    color: #A95170;
     transition: 0.1s linear; }
     .audio__icon-heart_miss {
       color: #F2D4DC; }
@@ -1332,10 +1791,10 @@ body {
         border-color: #A95170;
         background-color: #A95170;
         color: white; }
-    .audio__choice.active {
+    .audio__choice.active-answer {
       border-color: #2B788B;
       color: #2B788B; }
-      .audio__choice.active[data-answer] {
+      .audio__choice.active-answer[data-answer] {
         border-color: #639B6D;
         background-color: #639B6D;
         color: white; }
@@ -1360,13 +1819,17 @@ body {
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
     padding: 10px 20px; }
   .answer__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     background-color: #F6F5F4;
     border: none;
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    transition: 0.1s linear; }
+    transition: 0.1s linear;
+    cursor: pointer; }
     .answer__play:hover {
       background-color: #2B788B; }
       .answer__play:hover img {
@@ -1792,7 +2255,6 @@ body {
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
   .statistics-denied {
     display: flex;
-    max-width: fit-content;
     flex-direction: row;
     background: white;
     padding: 40px;
@@ -1962,29 +2424,38 @@ body {
   font-weight: 700;
   font-style: normal; }
 
-.particle.sprint-multiplier {
-  display: flex;
-  justify-content: center;
-  padding: 11px 18px;
-  width: 44px;
-  height: 44px;
-  letter-spacing: -0.04em;
-  text-align: center;
-  border-radius: 50px;
-  align-items: center;
-  background-color: transparent !important;
-  color: black !important;
-  font: normal 400 48px/100% "Dela Gothic One"; }
-
-.particle.sprint-points {
-  display: flex;
-  justify-content: center;
-  padding: 11px 18px;
-  width: 44px;
-  height: 44px;
-  letter-spacing: -0.04em;
-  text-align: center;
-  border-radius: 50px;
-  align-items: center;
-  font: normal 700 16px/100% "Montserrat"; }
+.particle {
+  user-select: none; }
+  .particle.sprint-multiplier {
+    display: flex;
+    justify-content: center;
+    padding: 11px 18px;
+    width: 44px;
+    height: 44px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    border-radius: 50px;
+    align-items: center;
+    background-color: transparent !important;
+    color: black !important;
+    font: normal 400 48px/100% "Dela Gothic One"; }
+  .particle.sprint-points {
+    display: flex;
+    justify-content: center;
+    padding: 11px 18px;
+    width: 44px;
+    height: 44px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    border-radius: 50px;
+    align-items: center;
+    font: normal 700 16px/100% "Montserrat"; }
+  .particle.audiocall-heart {
+    background-color: transparent !important;
+    font: normal 400 32px/100% "Dela Gothic One";
+    color: #A95170 !important; }
+  .particle.audiocall-rightAnswer {
+    background-color: transparent !important;
+    font: normal 400 32px/100% "Dela Gothic One";
+    color: #639B6D !important; }
 
