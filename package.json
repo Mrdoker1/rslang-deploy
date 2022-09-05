@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "RSlang 2022Q1 Command Task",
     "engines": {
-        "node": "6.11.1"
+        "node": "8.1.x"
       },
     "scripts": {
         "start": "node server.js",
