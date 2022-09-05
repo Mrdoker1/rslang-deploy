@@ -10,28 +10,11 @@ app.get('*', (req, res) => {
 }); 
 app.listen(port);
 
-// app.use('/', (req, res, next) => {
-//     if (req.originalUrl === '/') {
-//       res.send('Service is running!');
-//       return;
-//     }
-//     next();
-//   });
 
-  const excludes = ['book', 'games', 'stats']; //Client
-      
-  app.use(express.static(__dirname)); //подключить папку с index.html
-  
-  app.use('/', (req, res, next) => {
-      const url = req.path;
-
-      for(let ex in excludes) { //Ищем запросы к API
-          if(url.includes(ex)) {
-              res.sendFile(path.join(__dirname, "index.html")); //Наш клиент
-              //res.redirect('/');
-              return; //чтобы не попасть в API и на страницу 404
-          }
-      }
-      
-      next(); //переход к API
-  })
+app.use('/', (req, res, next) => {
+    if (req.originalUrl === '/') {
+      res.send('Service is running!');
+      return;
+    }
+    next();
+  });
