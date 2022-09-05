@@ -126,6 +126,7 @@ body {
   letter-spacing: -0.04em; }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
@@ -137,6 +138,7 @@ body {
   align-items: center; }
 
 .main {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex: 1 1 auto;
@@ -166,8 +168,9 @@ body {
       color: #000; }
   .nav__item:first-child {
     padding-left: 0; }
-  .nav__item:hover a {
-    color: #000; }
+
+.nav__link:hover {
+  color: #000; }
 
 .dropdown {
   position: relative;
@@ -415,6 +418,10 @@ body {
     width: 16px;
     height: 16px;
     background: url("./assets/img/icon-lightning.svg") no-repeat center; }
+  .icon--lightning-w {
+    width: 16px;
+    height: 16px;
+    background: url("./assets/img/icon-lightning-w.svg") no-repeat center; }
   .icon--gear {
     width: 24px;
     height: 24px;
@@ -468,6 +475,24 @@ body {
   width: 200px;
   height: 200px;
   background: url("./assets/img/empty-img.png") no-repeat center;
+  background-size: contain; }
+
+.about-avatar-1 {
+  width: 200px;
+  height: 200px;
+  background: url("./assets/img/avatar1.svg") no-repeat center;
+  background-size: contain; }
+
+.about-avatar-2 {
+  width: 200px;
+  height: 200px;
+  background: url("./assets/img/avatar2.svg") no-repeat center;
+  background-size: contain; }
+
+.about-avatar-3 {
+  width: 200px;
+  height: 200px;
+  background: url("./assets/img/avatar3.svg") no-repeat center;
   background-size: contain; }
 
 @keyframes float {
@@ -1125,6 +1150,49 @@ body {
 .hidden {
   display: none !important; }
 
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/pageAbout.scss ***!
+  \**************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot");
+  src: local("Dela Gothic One Regular"), local("DelaGothicOne-Regular"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"), url("./assets/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.page .about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center; }
+  .page .about__list .statistics-denied {
+    max-width: 800px;
+    width: 100%; }
+  .page .about__list .statistics-denied__body {
+    justify-content: center; }
+
 /*!*************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/pageBook.scss ***!
   \*************************************************************************************************************************************************************************************/
@@ -1302,9 +1370,14 @@ body {
     font: normal 400 26px/100% "Dela Gothic One";
     letter-spacing: -0.04em;
     color: #000;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 0.1s linear;
+    filter: opacity(0.6); }
     .word-levels__item.active {
-      border-bottom: 2px solid #000; }
+      border-bottom: 2px solid #000;
+      filter: opacity(1); }
+    .word-levels__item:hover {
+      filter: opacity(1); }
 
 .words__list {
   display: flex;
@@ -1317,16 +1390,22 @@ body {
   position: relative; }
 
 .words__list.grid {
-  gap: 20px; }
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; }
   .words__list.grid .card {
-    flex-basis: calc(100% / 3 - 20px);
+    flex-basis: calc((100% / 3) - 20px);
     flex-direction: column;
     border-radius: 14px; }
     .words__list.grid .card-left {
       border-radius: 14px 14px 0 0; }
+      .words__list.grid .card-left .stat__list {
+        right: -30%; }
     .words__list.grid .card-right {
       padding: 30px; }
     .words__list.grid .card__image {
+      max-width: 100%;
       max-height: 250px;
       min-height: 250px;
       border-radius: 14px 14px 0 0; }
@@ -1349,6 +1428,23 @@ body {
         font: normal 600 14px/140% "Montserrat"; }
         .words__list.grid .card__bottom .bttn:first-child {
           margin-bottom: 10px; }
+    .words__list.grid .card .stat__list {
+      animation: slide-out-grid 0.5s ease-in-out; }
+    .words__list.grid .card:hover .stat__list {
+      right: 0%;
+      animation: slide-in-grid 0.5s ease-in; }
+
+@keyframes slide-in-grid {
+  from {
+    right: -30%; }
+  to {
+    right: 0%; } }
+
+@keyframes slide-out-grid {
+  from {
+    right: 0%; }
+  to {
+    right: -30%; } }
 
 .card {
   display: flex;
@@ -1592,10 +1688,6 @@ body {
     border-radius: 14px;
     padding: 20px 40px;
     gap: 10px; }
-    .game__window .sprint-image {
-      width: 100%; }
-    .game__window .audiocall-image {
-      width: 100%; }
     .game__window__light {
       background: #ffffff;
       box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
