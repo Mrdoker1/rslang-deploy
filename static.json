@@ -1,9 +1,13 @@
 {
     "root": "dist/",
-    "clean_urls": true,
-    "error_page": "404",
     "routes": {
-      "/**": "index.html",
-      "/stats":  "index.html"
+        "/**": "index.html"
+    },
+    "clean_urls": false,
+    "https_only": true,
+    "headers": {
+        "/**": {
+        "Strict-Transport-Security": "max-age=31557600"
+        }
     }
-  }
+}
