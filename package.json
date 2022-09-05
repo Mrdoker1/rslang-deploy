@@ -3,11 +3,12 @@
     "version": "0.1.0",
     "description": "RSlang 2022Q1 Command Task",
     "engines": {
-        "node": "8.1.x"
+        "node": "12.16.x"
       },
     "scripts": {
         "start": "node server.js",
-        "heroku-postbuild": ""
+        "start:dev": "nodemon server.js",
+        "heroku-postbuild": "npm install --only=dev"
     },
     "dependencies": {
         "express": "^4.18.1",
