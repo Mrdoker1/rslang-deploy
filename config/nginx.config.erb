@@ -11,7 +11,7 @@ http {
 
     server {
         # listen on port 
-        listen 8080;
+        listen <%= ENV["PORT"] %>;
         # save logs here
         access_log /var/log/nginx/access.log compression;
 
@@ -19,7 +19,7 @@ http {
         gzip_types text/html application/javascript application/json text/css;
 
         # where the root here
-        root ../;
+        root /;
         # what file to server as index
         index index.html;
 
