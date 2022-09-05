@@ -10,8 +10,8 @@ http {
         '"$http_referer" "$http_user_agent"';
 
     server {
-        # listen on port 80
-        listen 8080;
+        # listen on port 
+        listen <%= ENV["PORT"] %>;
         # save logs here
         access_log /var/log/nginx/access.log compression;
 
@@ -19,7 +19,7 @@ http {
         gzip_types text/html application/javascript application/json text/css;
 
         # where the root here
-        root /index.html;
+        root ../;
         # what file to server as index
         index index.html;
 
