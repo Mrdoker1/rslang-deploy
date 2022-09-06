@@ -1568,7 +1568,8 @@ body {
     display: flex;
     gap: 20px; }
     .card__bottom .bttn {
-      outline: none; }
+      outline: none;
+      border: 0; }
   .card.hard .label {
     background-color: #CB5B43;
     opacity: 1;
@@ -1600,16 +1601,19 @@ body {
     display: flex;
     justify-content: center;
     font: normal 600 16px/140% "Montserrat";
-    color: #2B788B;
+    color: #5996A5;
     border-radius: 50%;
     text-decoration: none;
-    background-color: white;
+    border: 3px solid #5996A5;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
     .pagination__item:hover {
-      border: 3px solid #2B788B; }
+      border: 3px solid #2B788B;
+      background-color: #2B788B;
+      color: #fff; }
     .pagination__item.active {
       color: #F6F5F4;
-      background-color: #2B788B; }
+      background-color: #2B788B;
+      border-color: #2B788B; }
     .pagination__item.learned {
       color: #F6F5F4;
       border-color: #639B6D;
@@ -1799,15 +1803,15 @@ body {
   background-color: #CB5B43; }
 
 #level-4 + label {
-  color: #A95170;
-  border-color: #A95170; }
+  color: #A95151;
+  border-color: #A95151; }
   #level-4 + label:hover {
-    background-color: rgba(169, 81, 112, 0.1); }
+    background-color: rgba(169, 81, 81, 0.1); }
 
 #level-4:checked + label {
   color: white;
-  border-color: #A95170;
-  background-color: #A95170; }
+  border-color: #A95151;
+  background-color: #A95151; }
 
 #level-5 + label {
   color: #A15993;
@@ -1873,7 +1877,7 @@ body {
     padding-top: 20px; }
   .audio__icon-heart {
     font: normal 400 32px/100% "Dela Gothic One";
-    color: #A95170;
+    color: #A95151;
     transition: 0.1s linear; }
     .audio__icon-heart_miss {
       color: #F2D4DC; }
@@ -1898,8 +1902,8 @@ body {
     .audio__choice.disabled {
       pointer-events: none; }
       .audio__choice.disabled[data-answer] {
-        border-color: #A95170;
-        background-color: #A95170;
+        border-color: #A95151;
+        background-color: #A95151;
         color: white; }
     .audio__choice.active-answer {
       border-color: #2B788B;
@@ -2065,18 +2069,20 @@ body {
     color: #C3DCE3; }
   .sprint-game__true-button {
     background-color: #639B6D;
-    color: white; }
+    color: white;
+    border: 0; }
     .sprint-game__true-button:hover {
       color: #639B6D;
       background-color: transparent;
       outline: 3px solid #639B6D; }
   .sprint-game__false-button {
-    background-color: #A95170;
-    color: white; }
+    background-color: #A95151;
+    color: white;
+    border: 0; }
     .sprint-game__false-button:hover {
-      color: #A95170;
+      color: #A95151;
       background-color: transparent;
-      outline: 3px solid #A95170; }
+      outline: 3px solid #A95151; }
 
 /*!**********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/chart.scss ***!
@@ -2208,7 +2214,7 @@ body {
       font: normal 600 16px/140% "Montserrat";
       color: #757575; }
   .gameresult-chart__heart {
-    color: #945069; }
+    color: #A95151; }
 
 /*!********************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/gameResultWords.scss ***!
@@ -2563,7 +2569,7 @@ body {
   .particle.audiocall-heart {
     background-color: transparent !important;
     font: normal 400 32px/100% "Dela Gothic One";
-    color: #A95170 !important; }
+    color: #A95151 !important; }
   .particle.audiocall-rightAnswer {
     background-color: transparent !important;
     font: normal 400 32px/100% "Dela Gothic One";
