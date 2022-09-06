@@ -1256,6 +1256,8 @@ body {
       background-color: #F2D4DC; }
       .page__book .games .game--sprint:before {
         content: initial; }
+      .page__book .games .game--sprint:hover {
+        background-color: #945069; }
     .page__book .games .game--audio-call {
       min-width: 178px;
       background-color: #C3DCE3; }
@@ -1263,6 +1265,8 @@ body {
         padding-right: 0px; }
       .page__book .games .game--audio-call:before {
         content: initial; }
+      .page__book .games .game--audio-call:hover {
+        background-color: #5996A5; }
     .page__book .games .game__img {
       width: 44px;
       height: 44px;
@@ -1275,6 +1279,13 @@ body {
     filter: grayscale(1); }
     .page__book.learned .game:hover .game__bttn {
       color: #757575; }
+
+.page__menu {
+  display: flex;
+  align-items: center;
+  gap: 20px; }
+  .page__menu .divider-vertical {
+    height: 30px; }
 
 .page-header {
   display: flex;
@@ -1357,6 +1368,7 @@ body {
       filter: brightness(0) invert(1); }
 
 .page .menu__item {
+  width: fit-content;
   padding-left: 42px;
   font: normal 400 26px/100% "Dela Gothic One";
   color: #757575;
@@ -1364,13 +1376,11 @@ body {
   background-position: left;
   transition: 0.1s linear; }
   .page .menu__item.active {
-    color: #000; }
+    color: #000;
+    filter: brightness(0); }
   .page .menu__item:hover {
-    color: #000; }
-  .page .menu__item:nth-child(1) {
-    margin-right: 20px;
-    padding-right: 20px;
-    border-right: 1.22px solid #E0E0E0; }
+    color: #000;
+    filter: brightness(0); }
 
 .word-levels {
   display: flex;
@@ -1518,16 +1528,20 @@ body {
   .card__header {
     display: flex;
     justify-content: space-between; }
-  .card .play-icon {
+  .card-word__audio {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F5F4;
+    transition: 0.1s linear;
     width: 40px;
     height: 40px;
-    padding: 8px;
-    background-color: #F6F5F4;
-    border-radius: 4px;
-    border: none;
     cursor: pointer; }
-    .card .play-icon:hover {
+    .card-word__audio:hover {
       background-color: #2B788B; }
+      .card-word__audio:hover .play-icon {
+        filter: brightness(100); }
   .card .word-title, .card .word-translate {
     display: inline-block;
     margin-bottom: 15px;
