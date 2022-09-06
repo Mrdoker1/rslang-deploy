@@ -308,7 +308,9 @@ body {
     animation: float 4.5s ease-in-out infinite; }
 
 .app-statistic {
-  display: flex; }
+  display: flex;
+  gap: 30px;
+  align-items: center; }
   .app-statistic div {
     display: flex;
     flex-direction: column;
@@ -316,8 +318,13 @@ body {
     .app-statistic div .text {
       text-align: center; }
   .app-statistic .words {
-    padding-right: 3rem;
-    border-right: 1.22px solid #E0E0E0; }
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: flex;
+    transition: 0.1s linear; }
+    .app-statistic .words:hover {
+      transform: scale(1.02); }
     .app-statistic .words .numbers {
       display: flex;
       flex-direction: row;
@@ -336,7 +343,9 @@ body {
         display: inline-block;
         color: #2B788B; }
   .app-statistic .games {
-    padding-left: 3rem; }
+    transition: 0.1s linear; }
+    .app-statistic .games:hover {
+      transform: scale(1.02); }
     .app-statistic .games .numbers {
       display: flex;
       flex-direction: row;
@@ -1192,8 +1201,11 @@ body {
   gap: 40px;
   align-items: center; }
   .page .about__list .statistics-denied {
+    transition: 0.1s linear;
     max-width: 800px;
     width: 100%; }
+    .page .about__list .statistics-denied:hover {
+      transform: scale(1.02); }
   .page .about__list .statistics-denied__body {
     justify-content: center; }
   .page .about__list .statistics-denied__heading-header {
@@ -1423,6 +1435,7 @@ body {
   flex-wrap: wrap;
   gap: 30px; }
   .words__list.grid .card {
+    transition: 0.1s linear;
     flex-basis: calc((100% / 3) - 20px);
     flex-direction: column;
     border-radius: 14px; }
@@ -1677,6 +1690,11 @@ body {
   to {
     right: -35%; } }
 
+.card {
+  transition: 0.1s linear; }
+  .card:hover {
+    transform: scale(1.02); }
+
 /*!**********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/games.scss ***!
   \**********************************************************************************************************************************************************************************/
@@ -1713,10 +1731,13 @@ body {
   display: flex;
   height: 100%; }
   .game__wrapper {
+    transition: 0.1s linear;
     margin: auto;
     padding: 10px 0;
     max-width: 800px;
     width: 100%; }
+    .game__wrapper:hover {
+      transform: scale(1.02); }
   .game__window {
     display: flex;
     align-items: center;
@@ -2166,6 +2187,7 @@ body {
   font-style: normal; }
 
 .gameresult {
+  transition: 0.1s linear;
   display: flex;
   padding: 60px 25px;
   background: white;
@@ -2174,9 +2196,11 @@ body {
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
   border-radius: 14px;
   align-items: center; }
+  .gameresult:hover {
+    transform: scale(1.02); }
   .gameresult__wrapper {
     display: flex;
-    gap: 10px; }
+    gap: 20px; }
   .gameresult__info {
     display: flex;
     flex-direction: row; }
@@ -2271,7 +2295,10 @@ body {
   width: 630px;
   height: 400px;
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
-  border-radius: 14px; }
+  border-radius: 14px;
+  transition: 0.1s linear; }
+  .gameresultwords:hover {
+    transform: scale(1.02); }
   .gameresultwords__list {
     display: flex;
     height: 200px;
@@ -2379,10 +2406,13 @@ body {
   font-style: normal; }
 
 .statistics {
+  transition: 0.1s linear;
   padding: 40px;
   background: white;
   border-radius: 14px;
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
+  .statistics:hover {
+    transform: scale(1.02); }
   .statistics-denied {
     display: flex;
     flex-direction: row;
@@ -2424,6 +2454,7 @@ body {
         color: #000;
         border-bottom: 2px solid #000; }
   .statistics__charts {
+    transition: 0.1s linear;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -2433,6 +2464,8 @@ body {
     background: white;
     border-radius: 14px;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08); }
+    .statistics__charts:hover {
+      transform: scale(1.02); }
   .statistics__container {
     display: flex;
     gap: 20px;
