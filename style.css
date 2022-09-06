@@ -66,9 +66,9 @@ button:hover {
   color: #2B788B; }
 
 .bttn {
-  padding: 14px 22px;
+  padding: 11px 19px;
   border-radius: 50px;
-  border: none;
+  border: 3px solid #2B788B;
   background-color: #2B788B;
   letter-spacing: -0.04em;
   color: white;
@@ -78,22 +78,24 @@ button:hover {
   cursor: pointer; }
   .bttn:hover {
     background-color: transparent;
-    color: #2B788B;
-    outline: 3px solid #2B788B; }
+    color: #2B788B; }
 
 .bttn--light {
   background-color: #C3DCE3;
+  border-color: #C3DCE3;
   color: #2B788B; }
   .bttn--light:hover {
     color: white;
     background-color: #2B788B;
+    border-color: #2B788B;
     outline: none; }
 
 .bttn--green {
   width: 100%;
   padding: 14px 10px;
   border-radius: 100px;
-  background-color: #639B6D; }
+  background-color: #639B6D;
+  border: none; }
   .bttn--green:hover {
     color: #639B6D;
     background-color: rgba(99, 155, 109, 0.3); }
@@ -102,7 +104,8 @@ button:hover {
   width: 100%;
   padding: 14px 10px;
   border-radius: 100px;
-  background-color: #CB5B43; }
+  background-color: #CB5B43;
+  border: none; }
   .bttn--red:hover {
     color: #CB5B43;
     background-color: rgba(203, 91, 67, 0.3); }
@@ -110,6 +113,7 @@ button:hover {
 .bttn--transparent {
   padding: 0;
   background: none;
+  border-color: transparent;
   color: #000; }
   .bttn--transparent:hover {
     text-decoration: underline;
@@ -180,10 +184,10 @@ body {
     font: normal 600 16px/140% "Montserrat";
     letter-spacing: -0.04em; }
     .dropdown span:after {
-      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z'/%3E%3C/svg%3E");
+      content: url("./assets/img/icon-arrow.svg");
       display: inline-block;
-      width: 10px;
-      height: 10px;
+      width: 14px;
+      height: 14px;
       padding: 0 5px; }
   .dropdown__menu {
     display: flex;
@@ -1192,6 +1196,17 @@ body {
     width: 100%; }
   .page .about__list .statistics-denied__body {
     justify-content: center; }
+  .page .about__list .statistics-denied__heading-header {
+    display: flex;
+    gap: 14px; }
+    .page .about__list .statistics-denied__heading-header .label {
+      width: 56px;
+      height: 25px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #2B788B; }
+      .page .about__list .statistics-denied__heading-header .label:hover {
+        background-color: #000; }
 
 /*!*************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/pageBook.scss ***!
@@ -1346,8 +1361,11 @@ body {
   font: normal 400 26px/100% "Dela Gothic One";
   color: #757575;
   text-decoration: none;
-  background-position: left; }
+  background-position: left;
+  transition: 0.1s linear; }
   .page .menu__item.active {
+    color: #000; }
+  .page .menu__item:hover {
     color: #000; }
   .page .menu__item:nth-child(1) {
     margin-right: 20px;
