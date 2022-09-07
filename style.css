@@ -403,6 +403,11 @@ body {
     .label--red.active {
       background-color: #CB5B43;
       color: #fff; }
+  .label--dark-green {
+    color: #fff;
+    background-color: #2B788B; }
+    .label--dark-green:hover {
+      background-color: #000; }
 
 .social {
   display: flex;
@@ -1209,13 +1214,8 @@ body {
     display: flex;
     gap: 14px; }
     .page .about__list .statistics-denied__heading-header .label {
-      width: 56px;
-      height: 25px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #2B788B; }
-      .page .about__list .statistics-denied__heading-header .label:hover {
-        background-color: #000; }
+      max-height: 25px;
+      text-decoration: none; }
 
 .statistics-denied {
   transition: 0.1s linear; }
