@@ -525,6 +525,55 @@ body {
   100% {
     transform: translatey(0px); } }
 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #5996A5), color-stop(0.72, #2B788B), color-stop(0.86, #5996A5)); }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */ }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%; }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent; }
+
 /*!***********************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/module/ui/styles/header.scss ***!
   \***********************************************************************************************************************************************************************************/
@@ -596,7 +645,6 @@ body {
           font: normal 600 12px/140% "Montserrat";
           color: #BABABA; }
         .header .user .dropdown__menu input {
-          display: block;
           visibility: hidden;
           width: 0;
           height: 0; }
@@ -2328,7 +2376,8 @@ body {
     overflow: hidden auto;
     gap: 14px;
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 24px;
+    padding: 4px;
     height: 100%; }
 
 .knowingwords__container {
@@ -2389,7 +2438,7 @@ body {
         filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(0%) hue-rotate(269deg) brightness(107%) contrast(107%); }
   .gameresultword__body {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 8px;
     font: normal 600 16px/140% "Montserrat";
     color: #757575; }
