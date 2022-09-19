@@ -645,7 +645,7 @@ body.menu-open {
   z-index: 1;
   top: -5px;
   left: 105%; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .tooltip .tooltiptext {
       left: -115%;
       top: -50%; } }
@@ -664,7 +664,7 @@ body.menu-open {
   border-width: 5px;
   border-style: solid;
   border-color: transparent black transparent transparent; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .tooltip .tooltiptext::after {
       left: 100%;
       transform: rotateY(-190deg); } }
@@ -1713,9 +1713,17 @@ body.menu-open {
     right: 0;
     border: 1px solid #F6F5F4;
     z-index: 1; }
+    @media only screen and (max-width: 480px) {
+      .page__settings .dropdown__menu {
+        max-width: 320px;
+        min-width: 320px;
+        right: -5px; } }
     .page__settings .dropdown__menu-item {
       font: normal 600 16px/140% "Montserrat";
       color: #757575; }
+      @media only screen and (max-width: 480px) {
+        .page__settings .dropdown__menu-item {
+          font: normal 600 14px/140% "Montserrat"; } }
   .page__settings .settings-value-checkbox {
     width: 20px;
     height: 20px;
@@ -2113,6 +2121,9 @@ body.menu-open {
   margin: 4rem 0;
   border-radius: 14px;
   background: #fff; }
+  @media only screen and (max-width: 480px) {
+    .empty-message {
+      flex-direction: column; } }
 
 .empty__title {
   margin-bottom: 14px;
@@ -2734,19 +2745,25 @@ body.menu-open {
   padding: 60px 25px;
   background: white;
   flex-direction: column;
-  width: 670px;
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
   border-radius: 14px;
   align-items: center; }
   .gameresult:hover {
     transform: scale(1.02); }
+  @media only screen and (max-width: 1024px) {
+    .gameresult {
+      padding: 20px; } }
   @media only screen and (max-width: 768px) {
     .gameresult {
       width: 100%;
       padding: 20px; } }
   .gameresult__wrapper {
+    flex: 1 0 auto;
     display: flex;
     gap: 20px; }
+    @media only screen and (max-width: 1024px) {
+      .gameresult__wrapper {
+        width: 100%; } }
     @media only screen and (max-width: 768px) {
       .gameresult__wrapper {
         width: 100%;
@@ -2754,10 +2771,11 @@ body.menu-open {
   .gameresult__info {
     display: flex;
     flex-direction: row; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       .gameresult__info {
         flex-direction: column;
-        align-items: center; } }
+        align-items: center;
+        text-align: center; } }
     .gameresult__info-body {
       display: flex;
       flex-direction: column; }
@@ -2782,6 +2800,9 @@ body.menu-open {
     flex-direction: row;
     padding-top: 20px;
     gap: 20px; }
+    @media only screen and (max-width: 1024px) {
+      .gameresult__charts {
+        justify-content: center; } }
   .gameresult__actions {
     display: flex;
     justify-content: center;
@@ -2858,15 +2879,19 @@ body.menu-open {
   background: white;
   padding: 40px 40px;
   gap: 20px;
-  width: 630px;
-  height: 400px;
+  max-height: 430px;
+  height: 100%;
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
   border-radius: 14px;
   transition: 0.1s linear; }
+  @media only screen and (max-width: 1024px) {
+    .gameresultwords {
+      flex-direction: column;
+      padding: 20px;
+      width: 50%; } }
   @media only screen and (max-width: 768px) {
     .gameresultwords {
       width: 100%;
-      padding: 20px;
       flex-direction: column;
       max-height: 400px;
       overflow: hidden;
